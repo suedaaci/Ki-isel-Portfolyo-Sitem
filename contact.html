@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Portfolyo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Portfolyom</div>
+        <div class="menu">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="about.html">Hakkımda</a>
+            <a href="cv.html">CV</a>
+            <a href="projects.html">Projeler</a>
+            <a href="contact.html">İletişim</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h2 style="margin-top: 30px;">İletişime Geçin</h2>
+        <p>Görüş ve önerileriniz için aşağıdaki formu doldurabilirsiniz.</p>
+
+        <form id="contactForm" style="max-width: 500px; margin-top: 20px;">
+            <div style="margin-bottom: 15px;">
+                <label for="name">Ad Soyad:</label><br>
+                <input type="text" id="name" style="width: 100%; padding: 8px; margin-top: 5px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="email">E-posta:</label><br>
+                <input type="email" id="email" style="width: 100%; padding: 8px; margin-top: 5px;">
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="message">Mesajınız:</label><br>
+                <textarea id="message" rows="5" style="width: 100%; padding: 8px; margin-top: 5px;"></textarea>
+            </div>
+
+            <button type="submit" style="background: #2c3e50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+                Gönder
+            </button>
+            
+            <p id="formFeedback" style="margin-top: 15px; font-weight: bold;"></p>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
